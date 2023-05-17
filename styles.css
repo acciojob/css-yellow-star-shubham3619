@@ -1,1 +1,25 @@
 /*  your css code here. If applicable */
+.star {
+  width: 0;
+  height: 0;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid yellow;
+  border-left: 50px solid transparent;
+  transform: rotate(deg);
+  margin: 50px;
+  position: relative;
+}
+
+.star::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid yellow;
+  border-left: 50px solid transparent;
+  position: absolute;
+  top: 30px;
+  left: -50px;
+  transform: rotate(180deg);
+}
+
